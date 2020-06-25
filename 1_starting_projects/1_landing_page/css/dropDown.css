@@ -1,0 +1,249 @@
+
+html, body {
+  height: 100%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#my-life,
+#my-norms {
+  background-color: #333;
+}
+#my-life::after,
+#my-norms::after {
+  content: none;
+}
+#my-life #whoAmI-info-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#my-norms #comm-norms-container {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+#my-life p a.scroll-link,
+#my-norms p a.scroll-link{
+  color: #333;
+  text-decoration: none;
+  transition: color .3s;
+}
+#my-life p a:hover,
+#my-norms p a:hover{
+  color: #888;
+}
+
+
+
+
+
+
+
+
+
+.landing-section a.scroll-link {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.landing-section a.scroll-link:hover {
+  opacity: .5;
+}
+
+
+
+
+
+
+#about-me a.scroll-link,
+#interests a.scroll-link,
+#my-norms a.scroll-link,
+.landing-section a.scroll-link {
+  padding-top: 60px;
+}
+#about-me a span.scroll-icon,
+#interests a span.scroll-icon,
+#my-norms a span.scroll-icon,
+.landing-section a span.scroll-icon
+ {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#about-me a span.scroll-icon::before,
+#interests a span.scroll-icon::before,
+#my-norms a span.scroll-icon::before,
+.landing-section a span.scroll-icon::before
+{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+.title{ text-align: center;}
+
+#my-life a.scroll-link {
+  padding-top: 60px;
+}
+#my-life a span.scroll-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#my-life a span.scroll-icon::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb9 2s infinite;
+  animation: sdb9 2s infinite;
+  box-sizing: border-box;
+}
+
+#about-me a.scroll-link {
+  padding-top: 60px;
+}
+#about-me a span.scroll-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#about-me a span.scroll-icon::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+
+
+@-webkit-keyframes sdb9 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb9 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  table,tbody{
+    height: 100%; width:100%;
+  }
